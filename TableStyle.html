@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式</title>
+    <style>
+        th{
+             background-color: #bf0;
+             height: 20px;
+             width: 50px;
+             /*line-height: 20px;*/        /* 根据文本大小*/
+             text-align: left;
+        }
+        table{
+            table-layout: fixed;          /*首行统一宽度*/
+            border-collapse:collapse;      /*表格间隙合并*/
+            border-color: grey;
+            line-height: 16px;
+            width: 580px;
+        }
+         .even{
+            background-color: #ebf2d1;
+        }
+        /*td{
+            width: %25;
+        }*/
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>Steven Jobs</td>
+                <td>USA</td>
+            </tr>
+            <tr class="even">
+                <td>Baidu</td>
+                <td>Li YanHong</td>
+                <td>China</td>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>Larry Page</td>
+                <td>USA</td>
+            </tr>
+            <tr class="even">
+                <td>Lenovo</td>
+                <td>Liu Chuanzhi</td>
+                <td>China</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Bill Gates</td>
+                <td>USA</td>
+            </tr>
+            <tr class="even">
+                <td>Nokia</td>
+                <td>Stephen Elop</td>
+                <td>Finland</td>
+            </tr>
+        </tbody>           
+    </table>
+</body>
+</html>
